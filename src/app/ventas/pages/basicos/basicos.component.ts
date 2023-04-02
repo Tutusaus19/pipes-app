@@ -6,8 +6,13 @@ import { Component } from '@angular/core';
   styles:[]
 })
 export class BasicosComponent {
+
+  // Lower-Upper-TitleCase
     nombreLower: string = 'carlos';
     nombreUpper: string = 'CARLOS';
     nombreCompleto: string = 'cArLoS tUtUsaUS'
+
+    //Fechas
+    fecha: Date = new Date();
 
 }

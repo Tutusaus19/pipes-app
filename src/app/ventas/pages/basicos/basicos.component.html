@@ -24,4 +24,42 @@
   <p>
     Pipe para mostrar las fechas.
   </p>
+
+  <div class="grid">
+
+    <div class="col-6">
+       <p-card >
+        <ul>
+          <li>Fecha</li>
+          <li>Fecha | Date</li>
+          <li>Fecha | Date: short</li>
+          <li>Fecha | Date: long</li>
+          <li>Fecha | Date: Día Mes Año</li>
+        </ul>
+        <hr>
+        <ul>
+          <li>Fecha Inglaterra | Date: Día Mes Año y Hora</li>
+        </ul>
+       </p-card>
+     </div>
+
+     <div class="col-6">
+      <p-card >
+        <ul>
+          <li>{{fecha}}</li>
+          <li>{{fecha | date}}</li>
+          <li>{{fecha | date:'short'}}</li>
+          <li>{{fecha | date:'long'}}</li>
+          <li>{{fecha | date:'dd MMMM YYYY' }}</li>
+        </ul>
+
+        <hr>
+        <ul>
+          <li> {{fecha | date:'long': 'GMT+1': 'en'}} </li>
+        </ul>
+      </p-card>
+    </div>
+
+  </div>
+
 </div>
