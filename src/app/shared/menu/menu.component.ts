@@ -3,8 +3,7 @@ import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  templateUrl: './menu.component.html'
 })
 export class MenuComponent {
   items: MenuItem[] = [];
@@ -18,7 +17,7 @@ export class MenuComponent {
             {
               label: 'Textos y Fechas',
               icon: 'pi pi-align-left',
-              routerLink: ''
+              routerLink: '/'
             },
             {
               label: 'Números',
@@ -34,7 +33,8 @@ export class MenuComponent {
           },
           {
             label: 'Pipes personalizados',
-            icon: 'pi pi-cog'
+            icon: 'pi pi-cog',
+            routerLink: 'ordenar'
           }
         ]
 
